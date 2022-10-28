@@ -2,9 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: {{projectTitle}}</title>
+    <title>Интернет-магазин мороженного "Глейси"</title>
   </head>
   <body>
+    <!--  Переключатели для слайдера  -->
+    <input type="radio" name="slide-switch" id="slide1" checked>
+    <input type="radio" name="slide-switch" id="slide2">
+    <input type="radio" name="slide-switch" id="slide3">
     <!--Обертка-->
     <div class="wrapper">
       <!-- Шапка -->
@@ -61,6 +65,68 @@
 
       <!-- Контент главной страницы -->
       <main class="main">
+
+        <!-- Слайдер -->
+        <section class="slider">
+          <h2 class="visually-hidden">Новинки мороженного</h2>
+          <!-- Контент слайдера -->
+          <ul class="slider-list">
+            <li class="slider-item">
+              <h3 class="slider-item-title title">Нежный пломбир с клубничным джемом</h3>
+              <p class="slider-item-description">Натуральное мороженое из свежих сливок
+                и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
+              <a class="slider-item-button button" href="#">Заказать</a>
+              <img class="slider-item-image" src="./images/slider/ice-cream-1.png"
+                   alt="Рожок мороженного с клубничным джемом">
+            </li>
+            <li class="slider-item">
+              <h3 class="slider-item-title title">Сливочное мороженое со вкусом банана</h3>
+              <p class="slider-item-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и
+                наслаждение даже в самый жаркий летний день.</p>
+              <a class="slider-item-button button" href="#">Заказать</a>
+              <img class="slider-item-image" src="./images/slider/ice-cream-2.png" alt="Рожок мороженного цвета банана">
+            </li>
+            <li class="slider-item">
+              <h3 class="slider-item-title title">Карамельный пломбир с маршмеллоу</h3>
+              <p class="slider-item-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира
+                завоюет сердца сладкоежек всех возрастов.</p>
+              <a class="slider-item-button button" href="#">Заказать</a>
+              <img class="slider-item-image" src="./images/slider/ice-cream-3.png"
+                   alt="Рожок мороженного с карамелью и маршмеллоу">
+            </li>
+          </ul>
+          <!-- Кнопки переключения слайдера вперед и назад -->
+          <button class="slider-button slider-button-prev" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="slider-button slider-button-next" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
+          <!-- Пагинация слайдера -->
+          <ol class="slider-dots">
+            <li class="slider-dot">
+              <label class="slider-dot-label" for="slide1"><span class="visually-hidden">Первый слайд</span></label>
+            </li>
+            <li class="slider-dot">
+              <label class="slider-dot-label" for="slide2"><span class="visually-hidden">Второй слайд</span></label>
+            </li>
+            <li class="slider-dot">
+              <label class="slider-dot-label" for="slide3"><span class="visually-hidden">Третий слайд</span></label>
+            </li>
+          </ol>
+          <!-- Социальные сети -->
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link" href="https://t.me/htmlacademy"><span class="visually-hidden">Телеграм</span></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Ютуб</span></a>
+            </li>
+          </ul>
+        </section>
 
       </main>
 
