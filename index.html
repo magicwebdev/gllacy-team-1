@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Интернет-магазин мороженного "Глейси"</title>
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <!--  Переключатели для слайдера  -->
@@ -13,68 +14,49 @@
     <div class="container">
       <!-- Шапка -->
       <header class="header">
-        <!-- Логотип -->
-        <h1 class="visually-hidden">GlassyShop</h1>
-        <a class="header-logo" href="index.html">
-          <img class="header-logo-svg" src="images/logo.svg" alt="Логотип" />
-        </a>
-        <!-- Главное меню -->
-        <nav class="navigation">
-          <ul class="navigation-menu">
-            <li class="navigation-menu-item">
-              <a class="navigation-link" href="catalog.html">Каталог</a>
-            </li>
-            <li class="navigation-menu-item">
-              <a class="navigation-link" href="#">Доставка и оплата</a>
-            </li>
-            <li class="navigation-menu-item">
-              <a class="navigation-link" href="#">О компании</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- Меню пользователя -->
-        <div class="navigation-user-container">
-          <!-- Контактный телефон -->
-          <a class="navigation-link navigation-tel" href="tel:+78005558628"
-            >+7 800 555-86-28</a
-          >
-          <!-- Поиск -->
-          <ul class="navigation-user">
-            <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">
-                <img
-                  class="navigation-user-icon"
-                  src="images/search.svg"
-                  alt=""
-                />
-                <span class="visually-hidden">Поиск</span>
-              </a>
-            </li>
-            <!-- Вход -->
-            <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">
-                <img
-                  class="navigation-user-icon"
-                  src="images/login.svg"
-                  alt=""
-                />
-                <span class="navigation-user-login">Вход</span>
-              </a>
-            </li>
-            <!-- Корзина -->
-            <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">
-                <img
-                  class="navigation-user-icon"
-                  src="images/shopping-cart.svg"
-                  alt=""
-                />
-                <span class="navigation-user-shopping-cart">2 товара</span>
-              </a>
-            </li>
-          </ul>
+        <!-- Логотип и меню -->
+        <div class="header__info">
+          <img
+            class="logo"
+            src="images/logo.svg"
+            alt="Логотип"
+          />
+          <nav class="navigation">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a class="menu-link" href="catalog.html">Каталог</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#">Доставка и оплата</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#index.html">О компании</a>
+              </li>
+            </ul>
+          </nav>
         </div>
+        <!-- Меню пользователя -->
+        <ul class="menu-search">
+          <li>
+            <a class="phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">Вход</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">
+              <span class="visually-hidden">Корзина</span>
+            </a>
+          </li>
+        </ul>
       </header>
+
+      <h1 class="visually-hidden">Glacy-shop Ice Cream</h1>
 
       <!-- Контент главной страницы -->
       <main class="main">
@@ -187,9 +169,7 @@
                 При покупке 2 кг любого фруктового мороженого добавим в ваш
                 заказ банку малинового варенья бесплатно.
               </p>
-              <a class="button-common" href="#"
-                >Хочу подарок</a
-              >
+              <a class="button-common" href="#">Хочу подарок</a>
             </li>
             <li class="promo-item">
               <h3 class="promo-subtitle">Маршмеллоу даром!</h3>
@@ -197,9 +177,7 @@
                 При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных<br />
                 зефирок совершенно бесплатно.
               </p>
-              <a class="button-common" href="#"
-                >Хочу подарок</a
-              >
+              <a class="button-common" href="#">Хочу подарок</a>
             </li>
           </ul>
         </section>
@@ -326,8 +304,7 @@
             <h2 class="new-article-title">Новое в нашем блоге</h2>
             <a class="new-article-link" href="#">
               10 способов сервировки фруктовых щербетов к столу
-            </a
-            >
+            </a>
           </article>
           <!-- Блок подписки на рассылку -->
           <section class="subscribe">
@@ -359,9 +336,7 @@
         <!-- Блок доставки -->
         <section class="delivery">
           <div class="wrapper-delivery">
-            <h2 class="delivery-title">
-              Доставка любимого мороженого на дом
-            </h2>
+            <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
             <p class="delivery-text">
               Хочется полакомиться любимым десертом, но нет времени съездить в
               магазин? Закажите доставку мороженого на дом, и курьер привезёт

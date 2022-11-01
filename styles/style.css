@@ -6,6 +6,137 @@
   margin: 0;
   padding: 0;
 }
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
 html {
   box-sizing: border-box;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2d3440;
+  background-color: #feafc3;
+}
+
+/* https://htmlacademy.ru/blog/html/short-12 */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1210px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 575px;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 137px;
+  height: 56px;
+}
+
+nav {
+  display: block;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item {
+  padding-left: 31px;
+}
+
+.menu-link {
+  font-family: "Inter", sans-serif;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  color: #2d3440;
+  cursor: pointer;
+}
+
+.menu-search {
+  margin-left: auto;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  justify-content: flex-end;
+}
+
+.phone {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: inherit;
+
 }
